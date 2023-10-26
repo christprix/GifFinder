@@ -3,14 +3,6 @@ import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/',
+  base: '/GifFinder/',
   plugins: [react()],
-  resolve: {
-    alias: [
-      {
-        find: './runtimeConfig',
-        replacement: './runtimeConfig.browser', // ensures browser compatible version of AWS JS SDK is used
-      },
-    ]
-  }
 })
